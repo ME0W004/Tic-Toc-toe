@@ -1,7 +1,3 @@
-Markdown
-
-# 🎮 Tic Tac Toe Game with AI (Minimax)
-
 
 This is a classic Tic Tac Toe game developed with a modern web frontend (HTML, CSS, JavaScript) and a powerful AI backend built using Python (FastAPI and Minimax algorithm). The project allows users to play against an intelligent AI opponent or against another human player.
 
