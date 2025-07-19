@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XO Game - Select Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="menu">
+    <h1>Tic-Toc-Toe</h1>
+    <h1>Select Game Mode</h1>
+    <button class="btn-ai" onclick="startGame('ai')">Play vs AI</button>
+    <button class="btn-2p" onclick="startGame('2p')">2 Players</button>
+  </div>
+
+  <script>
+    function startGame(mode) {
+      localStorage.setItem('gameMode', mode);
+      window.location.href = 'game.html';
+    }
+  </script>
+</body>
+</html>

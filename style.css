@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #dfe9f3, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Menu Styles */
+.menu {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.menu h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.menu button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-ai {
+  background-color: #0984e3;
+  color: #fff;
+}
+
+.btn-2p {
+  background-color: #00b894;
+  color: #fff;
+}
+
+.menu button:hover {
+  transform: scale(1.05);
+}
+
+/* Game Page Styles */
+.game {
+  text-align: center;
+  max-width: 400px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: #b2bec3;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #2d3436;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  border: 2px solid #dfe6e9;
+}
+
+
+.cell.x {
+  color: #d63031;
+}
+
+.cell.o {
+  color: #0984e3;
+}
+
+.message {
+  margin: 20px;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.message.show {
+  display: block;
+}
+
+#restartButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #2d3436;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s ease;
+}
+
+#restartButton:hover {
+  background: #636e72;
+}
