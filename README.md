@@ -24,27 +24,3 @@ This is a classic Tic Tac Toe game developed with a modern web frontend (HTML, C
 * **Uvicorn:** An ASGI web server for running the FastAPI application.
 * **Pydantic:** Used by FastAPI for data validation and settings management.
 
-## 📦 Project Structure
-
-.
-├── ai_backend/ 
-
- │   ├── main.py             # FastAPI application for AI endpoint
-
- │   └── ai.py               # Minimax AI algorithm implementation
-
- ├── game.html               # Main game page
-
- ├── index.html              # Game mode selection page
- 
- ├── script.js               # Frontend JavaScript game logic
- 
- ├── style.css               # Frontend CSS styling
- 
- └── README.md
- 
- └── .gitignore
- 
- └── requirements.txt
-
-
